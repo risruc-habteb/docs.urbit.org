@@ -100,6 +100,10 @@ set with Eyre's `%eauth-host` task. It looks like:
 ```hoon
 [%eauth-host host=(unit @t)]
 ```
+e.g.,
+```hoon
+|pass [%e %eauth-host [~ 'https://your-url-here']]
+```
 
 If `host` is null it unsets any previous explicitly set host. Otherwise,
 it sets the URL given in the `@t`. This is stored separately to the
